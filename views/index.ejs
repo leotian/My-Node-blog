@@ -7,5 +7,14 @@
   <body>
     <h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
+  	<ul>
+		<% var supplies = ['mop', 'broom', 'duster']%>
+		<% for(var i=0; i<supplies.length; i++) {%>
+			<li><%= supplies[i] %></li>
+		<% } %>
+	</ul>
+	<%- include a %>
+	hello.world!
+	<%- include b %>
   </body>
 </html>
