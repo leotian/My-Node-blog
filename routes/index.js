@@ -55,7 +55,7 @@ module.exports = function(app) {
 				}
 				req.session.user = newUser;//用户信息存入 session
 				req.flash('success', '注册成功！');
-				req.redirect('/');//注册成功后返回主页
+				res.redirect('/');//注册成功后返回主页
 			});
 		});
 	});

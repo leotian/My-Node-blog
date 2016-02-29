@@ -22,7 +22,7 @@ User.prototype.save = function(callback) {
 			return callback(err);//错误，返回err信息
 		}
 		//读取 users 集合
-		db.collection('users', function (err, conllection) {
+		db.collection('users', function (err, collection) {
 			if (err) {
 				mongodb.close();
 				return callback(err);//错误，返回 err 信息
