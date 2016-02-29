@@ -13,7 +13,7 @@ User.prototype.save = function(callback) {
 	//要存入数据库的用户文档
 	var user = {
 		name: this.name,
-		passwor: this.password,
+		password: this.password,
 		email: this.email
 	};
 	//打开数据库
