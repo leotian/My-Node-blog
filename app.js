@@ -26,6 +26,7 @@ app.use(multer({
 		return filename;
 	}
 }))
+
 app.use(session({
 	secret: settings.cookieSecret,
 	key: settings.db, //cookie name
@@ -40,7 +41,7 @@ app.use(session({
 }));
 
 // uncomment after placing your favicon in /public
-//app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(flash());
 app.use(logger('dev'));
 app.use(bodyParser.json());
